@@ -2,6 +2,5 @@
 .env/
 node_modules
 __pycache__
-app/static/img
+app/static/img/
 Pipfile.lock
-.flaskenv
