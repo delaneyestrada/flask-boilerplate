@@ -6,6 +6,7 @@ app.config.from_object(Config)
 
 from app import routes
 
-app.run(port=8080)
+if __name__ == "__main__":
+    app.run(port=8080)
 
 

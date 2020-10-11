@@ -1,6 +1,11 @@
 import os
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
-    ENV = 'development'
-    DEBUG = True
+    DEBUG = False
+
+class ProductionConfig(Config):
+    DEBUG = False
+
+class DevelopmentConfig(Config):
+    ENV = "development"
+    DEVELOPMENT = True
